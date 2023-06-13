@@ -1,0 +1,254 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}
+.Left-h {
+  padding: 30px;
+  padding-top: 20px;
+  flex: 3;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.Right-h {
+  flex: 1;
+  position: relative;
+  background-color: orange;
+}
+.the-best-ad {
+  margin-top: 70px;
+  background-color: #363d42;
+  border-radius: 70px;
+  width: fit-content;
+  padding: 20px 13px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.the-best-ad > span {
+  z-index: 2;
+}
+.the-best-ad > div {
+  position: absolute;
+  background-color: orange;
+  width: 80px;
+  height: 80%;
+  left: 8px;
+  border-radius: 50px;
+  z-index: 1;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  text-overflow: inherit;
+  z-index: 1;
+}
+.hero-text > div:nth-of-type(3) {
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+/* figuers */
+.figures {
+  display: flex;
+  gap: 40px;
+}
+.figures > div {
+  display: flex;
+  flex-direction: column;
+}
+.figures > div > span:nth-of-type(1) {
+  color: white;
+  font-size: 30px;
+}
+.figures > div > span:nth-of-type(2) {
+  color: gainsboro;
+  text-transform: uppercase;
+}
+/* figuers */
+/* buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  font-weight: normal;
+}
+.hero-buttons > :nth-child(1) {
+  color: white;
+  background-color: orange;
+  width: 130px;
+}
+.hero-buttons > :nth-child(2) {
+  color: white;
+  background-color: transparent;
+  width: 130px;
+  border: 2px solid orange;
+}
+/* buttons */
+/* right side btn heart */
+.Right-h > .btn {
+  position: absolute;
+  right: 60px;
+  top: 35px;
+  color: black;
+}
+/* right side btn heart*/
+.heart-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: gray;
+  width: fit-content;
+  padding: 10px;
+  align-items: start;
+  border-radius: 5px;
+  position: absolute;
+  right: 90px;
+  top: 130px;
+}
+.heart-rate > img {
+  width: 25px;
+}
+.heart-rate > :nth-child(2) {
+  color: gainsboro;
+}
+.heart-rate > :nth-child(3) {
+  color: white;
+  font-size: 22px;
+}
+/* right side btn heart*/
+/*right img */
+.hero-img {
+  position: absolute;
+  top: 200px;
+  right: 130px;
+  width: 350px;
+  z-index: 1;
+}
+.hero-img-back {
+  position: absolute;
+  top: 70px;
+  right: 300px;
+  width: 250px;
+}
+/*right img */
+/* calories */
+.calories {
+  display: flex;
+  gap: 20px;
+  background-color: #a9a9a9;
+  border-radius: 5px;
+  width: 260px;
+  position: absolute;
+  top: 510px;
+  right: 410px;
+}
+.calories > img {
+  padding: 15px;
+}
+.calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.calories > div > :nth-child(2) {
+  color: white;
+  font-size: 30px;
+}
+.calories > div > :nth-child(1) {
+  color: gray;
+}
+/* calories */
+/* blur */
+.hero-blur {
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+  z-index: 1;
+}
+/* mediaqury for responsibel */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-blur {
+    width: 14rem;
+  }
+  .the-best-ad {
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+    transform: scale(1);
+    height: 40px;
+  }
+  .hero-text {
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text > div:nth-of-type(3) {
+    font-size: large;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .figures > div > span:nth-of-type(1) {
+    font-size: large;
+  }
+  .figures > div > span:nth-of-type(2) {
+    font-size: small;
+  }
+  .Right-h {
+    position: relative;
+    background-color: gray;
+  }
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+    z-index: 1;
+  }
+  .calories {
+    position: relative;
+    left: 3rem;
+    top: 4rem;
+  }
+  .calories > img {
+    width: 2rem;
+  }
+  .calories > div > :nth-child(2) {
+    color: white;
+    font-size: 1rem;
+  }
+  .hero-img {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+  }
+  .hero-img-back {
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
+  }
+}

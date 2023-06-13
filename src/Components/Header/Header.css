@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 200px;
+  height: 50px;
+}
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  color: white;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.header-menu > li:hover {
+  cursor: pointer;
+  color: orange;
+}
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .header-menu {
+    flex-direction: column;
+    background-color: #232b2b;
+    padding: 2rem;
+  }
+}

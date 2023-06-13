@@ -1,0 +1,54 @@
+.Join {
+  background-color: grey;
+  display: flex;
+  padding: 0.2rem;
+  gap: 10rem;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.Left-j {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.Left-j > div {
+  display: flex;
+  gap: 1rem;
+}
+.Right-j {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email-container {
+  display: flex;
+  gap: 3rem;
+  background-color: gainsboro;
+  padding: 1rem 2rem;
+}
+.email-container > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+}
+.btn-j {
+  background-color: orange;
+  color: white;
+}
+/* mediaqury for responsibel */
+@media screen and (max-width: 768px) {
+  .Join {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .Left-j {
+    font-size: xx-large;
+    flex-direction: column;
+  }
+  .Right-j {
+    padding-right: 2rem;
+  }
+}

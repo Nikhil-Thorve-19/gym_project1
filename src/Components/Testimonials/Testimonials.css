@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.Testimonials {
+  background-color: gray;
+  display: flex;
+  gap: 16px;
+  padding: 0 50px;
+}
+.Left-t {
+  padding-top: 100px;
+  display: flex;
+  flex: 1 1;
+  gap: 32px;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.Left-t > :nth-child(1) {
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Left-t > :nth-child(2),
+.Left-t > :nth-child(3) {
+  font-size: 48px;
+  font-weight: bold;
+}
+.Left-t > :nth-child(4) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.Right-t {
+  flex: 1 1;
+  position: relative;
+
+  margin-top: 100px;
+}
+.Right-t > img {
+  position: absolute;
+  width: 272px;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+.Right-t > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid orange;
+  background-color: transparent;
+  right: 9rem;
+  top: 0.9rem;
+}
+.Right-t > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 19rem;
+  top: 4rem;
+  right: 105px;
+  background-color: orange;
+}
+.arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+.arrows > img {
+  width: 1.5rem;
+}
+/* mediaqury for responsibel */
+@media screen and (max-width: 768px) {
+  .Testimonials {
+    flex-direction: column;
+  }
+  .Left-t > :nth-child(2),
+  .Left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .Right-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .Right-t > div {
+    position: relative;
+    display: none;
+  }
+  .Right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .Right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+}
